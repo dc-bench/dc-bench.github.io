@@ -158,6 +158,12 @@
         <a class="btn btn-secondary" href="#div_tinyimagenet_ipc10_heading">TinyImagenet IPC10</a>
         <a class="btn btn-secondary" href="#div_tinyimagenet_ipc50_heading">TinyImagenet IPC50</a>
       </div>
+      <div id="leaderboard" class="container button-list">
+        <a class="btn btn-secondary" href="#div_imagenet_ipc1_heading">Imagenet IPC1</a>
+        <a class="btn btn-secondary" href="#div_imagenet_ipc2_heading">Imagenet IPC2</a>
+        <a class="btn btn-secondary" href="#div_imagenet_ipc10_heading">Imagenet IPC10</a>
+        <a class="btn btn-secondary" href="#div_imagenet_ipc50_heading">Imagenet IPC50</a>
+      </div>
     </div>
 
     <section class="container" id="div_cifar10_ipc1_heading">
@@ -241,6 +247,41 @@
       <div id="div_tinyimagenet_ipc50"></div>
     </section>
 
+    <section class="container" id="div_imagenet_ipc1_heading">
+      <div class="heading">
+        <p>
+        Imagenet IPC 1
+        </p>
+      </div>
+      <div id="div_imagenet_ipc1"></div>
+    </section>
+
+    <section class="container" id="div_imagenet_ipc2_heading">
+      <div class="heading">
+        <p>
+        Imagenet IPC 2
+        </p>
+      </div>
+      <div id="div_imagenet_ipc2"></div>
+    </section>
+
+    <section class="container" id="div_imagenet_ipc10_heading">
+      <div class="heading">
+        <p>
+        Imagenet IPC 10
+        </p>
+      </div>
+      <div id="div_imagenet_ipc10"></div>
+    </section>
+    <section class="container" id="div_imagenet_ipc50_heading">
+      <div class="heading">
+        <p>
+        Imagenet IPC 50
+        </p>
+      </div>
+      <div id="div_imagenet_ipc50"></div>
+    </section>
+
     <div class="vspace50"></div>
 
     <div id="new_result" style="width:100%">
@@ -318,6 +359,18 @@
     });
     $("#div_tinyimagenet_ipc50").load("./tinyimagenet/tinyimagenet-ipc50.html", function() {
       $('#tinyimagenet-ipc50').DataTable();
+    });
+    $("#div_imagenet_ipc1").load("./imagenet/imagenet-ipc1.html", function() {
+      $('#imagenet-ipc1').DataTable();
+    });
+    $("#div_imagenet_ipc2").load("./imagenet/imagenet-ipc2.html", function() {
+      $('#imagenet-ipc2').DataTable();
+    });
+    $("#div_imagenet_ipc10").load("./imagenet/imagenet-ipc10.html", function() {
+      $('#imagenet-ipc10').DataTable();
+    });
+    $("#div_imagenet_ipc50").load("./imagenet/imagenet-ipc50.html", function() {
+      $('#imagenet-ipc50').DataTable();
     });
   </script>
 </body>
